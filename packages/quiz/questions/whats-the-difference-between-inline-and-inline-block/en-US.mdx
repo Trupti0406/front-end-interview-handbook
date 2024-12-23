@@ -1,7 +1,6 @@
 ---
 title: What's the difference between `inline` and `inline-block`?
 ---
-
 Let's also compare with `display: block` for completeness sake.
 
 | Property | `block` | `inline-block` | `inline` |
@@ -12,3 +11,4 @@ Let's also compare with `display: block` for completeness sake.
 | Can be aligned with `vertical-align` | No | Yes | Yes |
 | Margins and paddings | All sides respected. | All sides respected. | Only horizontal sides respected. Vertical sides, if specified, do not affect layout. Vertical space it takes up depends on `line-height`, even though the `border` and `padding` appear visually around the content. |
 | Float | - | - | Becomes like a `block` element where you can set vertical margins and paddings. |
+| Use Cases | Layout elements like `<div>`, `<p>`, `<section>`. | Buttons, dropdowns, form fields that need custom sizes but stay in line with text. | Links `<a>`, text formatting `<span>`, text style - bold `<b>`, italics `<i>` |
